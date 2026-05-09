@@ -9,7 +9,7 @@ pipeline {
         stage ("Build the Docker Image"){
             steps {
             echo "Starting to the build the docker image as defined in the Docker File"
-            sh "docker build -t pipeline-image:latest ."
+            sh "docker build -t pipeline-second:latest ."
             }
         }    
         stage ("Push to Docker Hub"){
