@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-WORKDIR /app
+WORKDIR /temp-folder
 COPY print.py .
 RUN apt update && apt install nginx -y
 EXPOSE 80
